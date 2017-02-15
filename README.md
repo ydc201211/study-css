@@ -28,7 +28,7 @@
   
   8、盒自身的margin也会合并，如果’min-height’属性为0，并且既没有top或者bottom border也没有top或者bottom padding，并且其’height’为0或者’auto’，并且不含行盒，并且其所有流内子级的margin（如果有的话）都合并了
   
-  ####具体css操作
+ ####具体css操作
   
   1、都用float来定位（有条件要求，适用范围较广）
   
@@ -39,3 +39,11 @@
   4、使用绝对定位（适用范围较窄）
   
   5、父元素增加padding-top属性（改变尺寸，不建议使用）
+  
+ ###关于display：inline-block的问题。
+  
+ #####quetion1 问题描述：一个父级div块里面包含两个div块，将两个div设置display为inline-block，然后两个div并没有对齐，而是上下错位的。
+   
+ ####解决思路:
+   1、将div设置为float，此时inline-block已经无效，可以不要
+   2、将后者的vertical-align设置为top，两个元素即可对齐。
