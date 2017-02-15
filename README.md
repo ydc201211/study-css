@@ -29,8 +29,13 @@
   8、盒自身的margin也会合并，如果’min-height’属性为0，并且既没有top或者bottom border也没有top或者bottom padding，并且其’height’为0或者’auto’，并且不含行盒，并且其所有流内子级的margin（如果有的话）都合并了
   
   ####具体css操作
+  
   1、都用float来定位（有条件要求，适用范围较广）
+  
   2、为父元素添加overflow不为visiable 的属性 （适用范围极广，推荐使用）
+  
   3、为元素添加border（一般不用）
+  
   4、使用绝对定位（适用范围较窄）
+  
   5、父元素增加padding-top属性（改变尺寸，不建议使用）
