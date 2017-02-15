@@ -43,7 +43,8 @@
 ###关于display：inline-block的问题。
   
 #####quetion1 问题描述：一个父级div块里面包含两个div块，将两个div设置display为inline-block，然后两个div并没有对齐，而是上下错位的。
-   
+
 ####解决思路:
    1、将div设置为float，此时inline-block已经无效，可以不要
+   
    2、将后者的vertical-align设置为top，两个元素即可对齐。
