@@ -48,3 +48,4 @@
    1、将div设置为float，此时inline-block已经无效，可以不要
    
    2、将后者的vertical-align设置为top，两个元素即可对齐。
+### 问题3：设置透明度问题opacity和设置background的rbga（），其中opacity设置起透明度后其子元素也会受到透明度的改变，使用rgba不会改变子元素的透明度。
